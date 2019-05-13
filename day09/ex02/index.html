@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<head>
+	<title>Todo</title>
+	<meta charset="utf-8" />
+	<style>
+		#ft_list {
+			width: 60vw;
+			height: auto;
+			margin-left: auto;
+			margin-right: auto;
+			text-align: center;
+			margin-top: 5vh;
+		}
+
+		.task {
+			width: 50vw;
+			height: 30px;
+			margin-left: auto;
+			margin-right: auto;
+			text-align: center;
+			margin-top: 2vh;
+			border: 2px solid black;
+			border-radius: 0.3vw;
+			background-color: whitesmoke;
+			vertical-align: middle;
+			padding-top: 1vh;
+			font-size: 20px;
+		}
+
+		#btn {
+			width: 40vw;
+			margin-top: 10px;
+			text-align: center;
+			margin-left: 30vw;
+			font-size: 30px;
+			background-color: lightgreen;
+		}
+	</style>
+</head>
+<body>
+	<h1 align="center">Список задач</h1>
+	<div id="ft_list"></div>
+	<input
+		id="btn"
+		onclick="create_node()"
+		type="submit"
+		name="btn"
+		value="New"
+	/>
+	<script src="todo.js"></script>
+</body>

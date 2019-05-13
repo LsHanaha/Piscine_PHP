@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Balloon</title>
+		<style>
+			#wrapper {
+				width: 200px;
+				margin: 0 auto;
+			}
+
+			#round {
+				padding-top: 50%;
+				padding-bottom: 50%;
+				border-radius: 50%;
+				background-color: red;
+				margin-right: auto;
+				margin-left: auto;
+				margin-top: 15vw;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="wrapper">
+			<div
+				onclick="ft_button_pushed()"
+				onmouseout="ft_mouse_left()"
+				id="round"
+			></div>
+		</div>
+	</body>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+	<script>
+		var colors = ["red", "green", "blue"];
+		var size = 200;
+		var switcher = 0;
+
+		function ft_button_pushed() {
+			size += 10;
+			switcher = (switcher + 1) % 3;
+			if (size > 420) size = 200;
+			$("#wrapper").css("width", size + "px");
+			$("#round").css("backgroundColor", colors[switcher]);
+		}
+
+		function ft_mouse_left() {
+			size -= 5;
+			if (size < 200) size = 200;
+			$("#wrapper").css("width", size + "px");
+			switcher = switcher - 1;
+			if (switcher == -1) switcher = 2;
+			$("#round").css("backgroundColor", colors[switcher]);
+		}
+	</script>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Calc</title>
+		<style>
+			.form_class {
+				width: 40vw;
+				margin-left: auto;
+				margin-right: auto;
+				text-align: center;
+				background-color: aqua;
+				border-radius: 2vw;
+			}
+
+			.text_input {
+				width: 35vw;
+				height: 30px;
+				border: 2px solid black;
+				margin-top: 10px;
+				border-radius: 5px;
+			}
+
+			.select_style {
+				margin-top: 10px;
+				height: 30px;
+				width: 35vw;
+				text-align-last: center;
+			}
+
+			.btn_style {
+				margin-top: 10px;
+				width: 15vw;
+				font-size: 3vw;
+				text-align-last: center;
+				margin-bottom: 10px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="form_class">
+			<form id="forms">
+				<input
+					id="first"
+					type="text"
+					name="first"
+					class="text_input"
+					placeholder="Place first number"
+				/>
+				<br />
+				<select class="select_style" id="ops" name="opers">
+					<option value="+">+</option>
+					<option value="-">-</option>
+					<option value="*">*</option>
+					<option value="/">/</option>
+					<option value="%">%</option>
+				</select>
+				<br />
+				<input
+					id="second"
+					type="text"
+					name="second"
+					class="text_input"
+					placeholder="Place second number"
+				/>
+				<br />
+				<input
+					class="btn_style"
+					id="btn"
+					type="submit"
+					name="button"
+					value="Try me!"
+					onclick="solve_func()"
+				/>
+			</form>
+		</div>
+	</body>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+	<script>
+		setInterval(function() {
+			alert("Please, use me...");
+		}, 30000);
+
+		function isNumeric(n) {
+			return !isNaN(parseFloat(n)) && isFinite(n);
+		}
+		function solve_func() {
+			var first = $("#first").val();
+			var second = $("#second").val();
+			var op = $("#ops").val();
+			if (
+				!isNumeric(first) ||
+				!isNumeric(second) ||
+				first < 0 ||
+				second < 0
+			) {
+				alert("ERROR :(");
+				return;
+			}
+			if (
+				(parseInt(first) == 0 && first.length > 2) ||
+				(parseInt(second) == 0 && second.length > 2)
+			) {
+				alert("ERROR :(");
+				return;
+			}
+			if ((op == "/" || op == "%") && second == 0) {
+				console.log("ERROR :(");
+				alert("It`s over 9000!");
+				return;
+			}
+			switch (op) {
+				case "+":
+					res = parseInt(first) + parseInt(second);
+					console.log(res);
+					alert(res);
+					break;
+				case "-":
+					res = parseInt(first) - parseInt(second);
+					console.log(res);
+					alert(res);
+					break;
+				case "*":
+					res = parseInt(first) * parseInt(second);
+					console.log(res);
+					alert(res);
+					break;
+				case "/":
+					res = parseInt(first) / parseInt(second);
+					console.log(res);
+					alert(res);
+					break;
+				case "%":
+					res = parseInt(first) % parseInt(second);
+					console.log(res);
+					alert(res);
+					break;
+			}
+		}
+	</script>
+</html>
