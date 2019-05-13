@@ -1,0 +1,216 @@
+body {
+	width: 100%;
+	margin: auto;
+	background-color: #505050;
+}
+
+a {
+	text-decoration: none;
+}
+
+.rectangle {
+	background-color: #909090;
+	box-shadow: 1vw 1vw 0.5vw black;
+	border-radius: 0.5vw;
+}
+
+.top_rectangle {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 1vw;
+	width: 75vw;
+	padding: 1vw;
+}
+
+.top_rectangle::after {
+	content: "";
+	clear: both;
+}
+
+.right_block {
+	text-align: right;
+	background: none;
+	float: right;
+}
+
+.three_recs {
+	vertical-align: top;
+	width: 90%;
+	margin-left: 5%;
+	margin-top: 2vw;
+	z-index: 1;
+}
+
+.clearfix::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.left_rectangle {
+	padding-top: 0.5%;
+	margin-left: 11%;
+	width: 5.5vw;
+	float: left;
+	height: 20vw;
+	text-align: center;
+	padding: 0.4%;
+}
+
+.mid_rectangle {
+	float: left;
+	width: 56%;
+	height: auto;
+	padding: 0.7%;
+	margin-left: 3.5vw;
+	z-index: 2;
+}
+
+.right_rectangle {
+	width: 5.5vw;
+	padding-top: 0.5%;
+	height: 20vw;
+	padding: 0.4%;
+	float: left;
+	margin-left: 3.5vw;
+}
+
+#day_of42 {
+	width: 35%;
+	background: none;
+}
+
+#reload {
+	width: 2vw;
+	text-decoration: none;
+}
+
+#close {
+	width: 2vw;
+	margin-top: 3vw;
+}
+
+#loupe {
+	width: 20vw;
+	margin-left: 51vw;
+	margin-top: -8vw;
+	background: none;
+	position: absolute;
+}
+
+#cluster {
+	width: 100%;
+	z-index: 3;
+}
+
+#ikea {
+	width: 5vw;
+	height: 7vw;
+	float: left;
+	margin-left: 33%;
+	position: relative;
+	margin-top: -25%;
+}
+
+#apple {
+	width: 20%;
+	height: 7vw;
+	float: right;
+	margin-right: 2%;
+	margin-top: -25%;
+	position: relative;
+	z-index: 20;
+}
+
+#arrow {
+	width: 3vw;
+}
+
+#main {
+	width: 3vw;
+}
+
+#oeil {
+	width: 3vw;
+	border: 1px solid red;
+	border-radius: 1%;
+}
+
+#outil {
+	width: 3vw;
+}
+
+#chat_icon {
+	width: 3vw;
+}
+
+#book {
+	margin-left: 20%;
+	width: 60%;
+}
+
+#towel {
+	margin-left: 20%;
+	width: 60%;
+}
+
+#brick {
+	display: block;
+	width: 2vw;
+	visibility: hidden;
+}
+
+#bricks {
+	background: url("resources/brick.jpg");
+	background-size: 30%;
+}
+
+.green_rectangle {
+	width: 25vw;
+	height: 10vw;
+	background-color: #98fb98;
+	box-shadow: 1vw 1vw 0.5vw black;
+	border-radius: 0.5vw;
+	margin-left: 10vw;
+	font-size: 0.8vw;
+	margin-top: -5vw;
+	z-index: 10;
+	padding: 0.3%;
+	position: relative;
+}
+
+.green_rectangle p {
+	font-size: 0.8vw;
+	font-family: Verdana;
+}
+
+#big {
+	font-size: 2vw;
+}
+
+#italic {
+	font-style: italic;
+}
+
+#ordinateurs {
+	text-shadow: 0.6vw 0.6vw 0.5vw red;
+}
+
+#input_text {
+	width: 70%;
+	height: 1vw;
+	border: inset;
+}
+
+#repondre {
+	height: 1.7vw;
+	padding: 0 0.2vw 0 0.2vw;
+	font-size: 0.7vw;
+	border: 0.1vw solid lightgrey;
+}
+
+#mover {
+	position: absolute;
+	top: 0;
+	left: 1vw;
+}

@@ -1,0 +1,1021 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Periodic Table</title>
+	<meta name="viewport" content="width=device-width initial-scale=1">
+	<style type="text/css" >
+
+		#hidden{
+			border: none;
+			background: none;
+		}
+
+		h1 {
+			color: black;
+			text-align: center;
+			font-size: 2vw;
+			margin-top: 40;
+		}
+
+		table {
+			font-weight: bold;
+			font-family: Arial, Helvetica, sans-serif;
+			width: 90%;
+			color: white;
+			border: none;
+			border-spacing: 0.2vw 0.2vw;
+		}
+
+		td {
+			width: 14vw;
+			height: 4vw;
+		}
+
+		#titles {
+			color: black;
+			font-size: 110%;
+		}
+
+		.table2 {
+			width: 80%;
+			color: white;
+			margin-top: 1vw;
+			margin-left: 10vw;
+		}
+
+		#photo {
+			width: 100px;
+			height: 200px;
+		}
+
+		.number {
+			font-weight: lighter;
+			margin-left: 0.2vw;
+			margin-bottom: 0.1vw;
+			font-size: 70%;
+			text-align: left;
+		}
+
+		.weight {
+			text-align: right;
+			color: black;
+			font-size: 40%;
+			padding-right: 0.1vw;
+			padding-top: 0.1vw;
+		}
+
+		.name {
+			text-align: center;
+		}
+
+		.top_name {
+			text-align: center;
+		}
+
+		.name_text {
+			text-align: center;
+			font-weight: normal;
+			font-size: 70%;
+		}
+
+		.top_name_text {
+			text-align: center;
+			font-weight: normal;
+			padding-bottom: 10px;
+			font-size: 70%;
+		}
+
+		.cell_non_me {
+			position: relative;
+			background-color: orange;
+		}
+
+		.cell_non_me2 {
+			position: relative;
+			background-color: purple;
+		}
+
+		.cell_me {
+			position: relative;
+			background-color: grey;
+		}
+
+		.cell_alcaline_me {
+			position: relative;
+			background-color: brown;
+		}
+
+		.cell_earth_me {
+			position: relative;
+			background-color: red;
+		}
+
+		.cell_nobels {
+			position: relative;
+			background-color: lightblue;
+		}
+
+		.lanthanide {
+			position: relative;
+			background-color: darkslategray;
+		}
+		.actinides {
+			position: relative;
+			background-color: darkcyan;
+		}
+	</style>
+
+</head>
+<body bgcolor = "Lightcyan">
+	<h1>Periodic Table of the Elements</h1>
+	<div style="text-align: center">
+		<img id = "photo" src="https://cdn1.savepice.ru/uploads/2019/4/29/759a3ecbe0effef7ea350dd20710f788-full.jpg">
+	</div>
+	<div>
+		<table align="center">
+			<tr>
+				<td class="cell_non_me">
+					<div class="weight">1.01</div>
+					<div class="name">H</div>
+					<div class="name_text">Hydrogen</div>
+					<div class="number">1</div>
+				</td>
+				
+				<td colspan="16" id="hidden"></td>
+				
+				<td class="cell_nobels">
+					<div class="weight">4.01</div>
+					<div class="name">He</div>
+					<div class="name_text">Helium</div>
+					<div class="number">2</div>
+				</td>
+			</tr>
+			<tr>
+				<td class="cell_alcaline_me">
+					<div class="weight">6.97</div>
+					<div class="name">Li</div>
+					<div class="name_text">Lithium</div>
+					<div class="number">3</div>
+				</td>
+
+				<td class="cell_earth_me">
+					<div class="weight">9.01</div>
+					<div class="name">Be</div>
+					<div class="name_text">Berylium</div>
+					<div class="number">4</div>
+				</td>
+				
+				<td colspan="10" id="hidden"></td>
+
+				<td class="cell_non_me">
+					<div class="weight">10.81</div>
+					<div class="name">B</div>
+					<div class="name_text">Boron</div>
+					<div class="number">5</div>
+				</td>
+
+				<td class="cell_non_me">
+					<div class="weight">12.01</div>
+					<div class="name">C</div>
+					<div class="name_text">Carbon</div>
+					<div class="number">6</div>
+				</td>
+
+				<td class="cell_non_me">
+					<div class="weight">14.01</div>
+					<div class="name">N</div>
+					<div class="name_text">Nitrogen</div>
+					<div class="number">7</div>
+				</td>
+
+				<td class="cell_non_me">
+					<div class="weight">15.99</div>
+					<div class="name">O</div>
+					<div class="name_text">Oxygen</div>
+					<div class="number">8</div>
+				</td>
+
+				<td class="cell_non_me">
+					<div class="weight">18.99</div>
+					<div class="name">F</div>
+					<div class="name_text">Fluorine</div>
+					<div class="number">9</div>
+				</td>
+
+				<td class="cell_nobels">
+					<div class="weight">20.18</div>
+					<div class="name">Ne</div>
+					<div class="name_text">Neon</div>
+					<div class="number">10</div>
+				</td>
+			</tr>
+
+			<tr id="hidden">
+				<td class="cell_alcaline_me">
+					<div class="weight">22.99</div>
+					<div class="name">Na</div>
+					<div class="name_text">Sodium</div>
+					<div class="number">11</div>
+				</td>
+	
+				<td class="cell_earth_me">
+					<div class="weight">24.3</div>
+					<div class="name">Mg</div>
+					<div class="name_text">Magnesium</div>
+					<div class="number">12</div>
+				</td>
+				
+				<td colspan="10" id="hidden"></td>
+	
+				<td class="cell_non_me2">
+					<div class="weight">26.98</div>
+					<div class="name">Al</div>
+					<div class="name_text">Aluminium</div>
+					<div class="number">13</div>
+				</td>
+	
+				<td class="cell_non_me">
+					<div class="weight">28.08</div>
+					<div class="name">Si</div>
+					<div class="name_text">Silicon</div>
+					<div class="number">14</div>
+				</td>
+	
+				<td class="cell_non_me">
+					<div class="weight">30.97</div>
+					<div class="name">P</div>
+					<div class="name_text">Phosphorus</div>
+					<div class="number">15</div>
+				</td>
+	
+				<td class="cell_non_me">
+					<div class="weight">32.07</div>
+					<div class="name">S</div>
+					<div class="name_text">Sulfur</div>
+					<div class="number">16</div>
+				</td>
+	
+				<td class="cell_non_me">
+					<div class="weight">35.45</div>
+					<div class="name">CL</div>
+					<div class="name_text">Clorine</div>
+					<div class="number">17</div>
+				</td>
+	
+				<td class="cell_nobels">
+					<div class="weight">39.95</div>
+					<div class="name">Ar</div>
+					<div class="name_text">Argon</div>
+					<div class="number">18</div>
+				</td>
+			</tr>
+		
+			<tr>
+				<td class="cell_alcaline_me">
+					<div class="weight">39.1</div>
+					<div class="name">K</div>
+					<div class="name_text">Potassium</div>
+					<div class="number">19</div>
+				</td>
+			
+				<td class="cell_earth_me">
+					<div class="weight">40.08</div>
+					<div class="name">Ca</div>
+					<div class="name_text">Calcium</div>
+					<div class="number">20</div>
+				</td>
+
+				<td class="cell_me">
+					<div class="weight">44.96</div>
+					<div class="name">Sc</div>
+					<div class="name_text">Scandium</div>
+					<div class="number">21</div>
+				</td>
+		
+				<td class="cell_me">
+					<div class="weight">47.87</div>
+					<div class="name">Ti</div>
+					<div class="name_text">Titanium</div>
+					<div class="number">22</div>
+				</td>
+		
+				<td class="cell_me">
+					<div class="weight">50.94</div>
+					<div class="name">V</div>
+					<div class="name_text">Vanadium</div>
+					<div class="number">23</div>
+				</td>
+		
+				<td class="cell_me">
+					<div class="weight">51.99</div>
+					<div class="name">Cr</div>
+					<div class="name_text">Chromium</div>
+					<div class="number">24</div>
+				</td>
+		
+				<td class="cell_me">
+					<div class="weight">54.94</div>
+					<div class="name">Mn</div>
+					<div class="name_text">Manganese</div>
+					<div class="number">25</div>
+				</td>
+		
+				<td class="cell_me">
+					<div class="weight">55.85</div>
+					<div class="name">Fe</div>
+					<div class="name_text">Iron</div>
+					<div class="number">26</div>
+				</td>
+
+				<td class="cell_me">
+					<div class="weight">58.93</div>
+					<div class="name">Co</div>
+					<div class="name_text">Cobalt</div>
+					<div class="number">27</div>
+				</td>
+
+				<td class="cell_me">
+					<div class="weight">58.69</div>
+					<div class="name">Ni</div>
+					<div class="name_text">Nickel</div>
+					<div class="number">28</div>
+				</td>
+
+				<td class="cell_me">
+					<div class="weight">63.55</div>
+					<div class="name">Cu</div>
+					<div class="name_text">Copper</div>
+					<div class="number">29</div>
+				</td>
+
+				<td class="cell_me">
+					<div class="weight">65.38</div>
+					<div class="name">Zn</div>
+					<div class="name_text">Zinc</div>
+					<div class="number">30</div>
+				</td>
+			
+				<td class="cell_non_me2">
+					<div class="weight">69.72</div>
+					<div class="name">Ga</div>
+					<div class="name_text">Gallium</div>
+					<div class="number">31</div>
+				</td>
+			
+				<td class="cell_non_me">
+					<div class="weight">72.63</div>
+					<div class="name">Ge</div>
+					<div class="name_text">Germanium</div>
+					<div class="number">32</div>
+				</td>
+	
+				<td class="cell_non_me">
+					<div class="weight">74.92</div>
+					<div class="name">As</div>
+					<div class="name_text">Arsenic</div>
+					<div class="number">33</div>
+				</td>
+	
+				<td class="cell_non_me">
+					<div class="weight">78.98</div>
+					<div class="name">Se</div>
+					<div class="name_text">Selenium</div>
+					<div class="number">34</div>
+				</td>
+	
+				<td class="cell_non_me">
+					<div class="weight">79.9</div>
+					<div class="name">Br</div>
+					<div class="name_text">Bromine</div>
+					<div class="number">35</div>
+				</td>
+
+				<td class="cell_nobels">
+					<div class="weight">83.8</div>
+					<div class="name">Kr</div>
+					<div class="name_text">Krypton</div>
+					<div class="number">36</div>
+				</td>
+			</tr>
+
+			<tr>
+				<td class="cell_alcaline_me">
+					<div class="weight">85.47</div>
+					<div class="name">Rb</div>
+					<div class="name_text">Rubidium</div>
+					<div class="number">37</div>
+				</td>
+			
+				<td class="cell_earth_me">
+					<div class="weight">87.62</div>
+					<div class="name">Sr</div>
+					<div class="name_text">Calcium</div>
+					<div class="number">38</div>
+				</td>
+	
+				<td class="cell_me">
+					<div class="weight">88.91</div>
+					<div class="name">Y</div>
+					<div class="name_text">Yttrium</div>
+					<div class="number">39</div>
+				</td>
+			
+				<td class="cell_me">
+					<div class="weight">91.22</div>
+					<div class="name">Zr</div>
+					<div class="name_text">Zirconium</div>
+					<div class="number">40</div>
+				</td>
+			
+				<td class="cell_me">
+					<div class="weight">92.91</div>
+					<div class="name">Nb</div>
+					<div class="name_text">Niobium</div>
+					<div class="number">41</div>
+				</td>
+			
+				<td class="cell_me">
+					<div class="weight">95.95</div>
+					<div class="name">Mo</div>
+					<div class="name_text">Molibdenum</div>
+					<div class="number">42</div>
+				</td>
+			
+				<td class="cell_me">
+					<div class="weight">98</div>
+					<div class="name">Tc</div>
+					<div class="name_text">Techenetum</div>
+					<div class="number">43</div>
+				</td>
+			
+				<td class="cell_me">
+					<div class="weight">101.07</div>
+					<div class="name">Ru</div>
+					<div class="name_text">Ruthenium</div>
+					<div class="number">44</div>
+				</td>
+	
+				<td class="cell_me">
+					<div class="weight">102.91</div>
+					<div class="name">Rh</div>
+					<div class="name_text">Rhodium</div>
+					<div class="number">45</div>
+				</td>
+	
+				<td class="cell_me">
+					<div class="weight">106.42</div>
+					<div class="name">Pd</div>
+					<div class="name_text">Palladium</div>
+					<div class="number">46</div>
+				</td>
+	
+				<td class="cell_me">
+					<div class="weight">107.87</div>
+					<div class="name">Ag</div>
+					<div class="name_text">Silver</div>
+					<div class="number">47</div>
+				</td>
+	
+				<td class="cell_me">
+					<div class="weight">112.41</div>
+					<div class="name">Cd</div>
+					<div class="name_text">Cadmium</div>
+					<div class="number">48</div>
+				</td>
+			
+				<td class="cell_non_me2">
+					<div class="weight">114.81</div>
+					<div class="name">In</div>
+					<div class="name_text">Indium</div>
+					<div class="number">49</div>
+				</td>
+			
+				<td class="cell_non_me2">
+					<div class="weight">118.71</div>
+					<div class="name">Sn</div>
+					<div class="name_text">Tin</div>
+					<div class="number">50</div>
+				</td>
+		
+				<td class="cell_non_me">
+					<div class="weight">121.76</div>
+					<div class="name">Sb</div>
+					<div class="name_text">Antimony</div>
+					<div class="number">51</div>
+				</td>
+		
+				<td class="cell_non_me">
+					<div class="weight">127.6</div>
+					<div class="name">Te</div>
+					<div class="name_text">Tellurium</div>
+					<div class="number">52</div>
+				</td>
+		
+				<td class="cell_non_me">
+					<div class="weight">126.9</div>
+					<div class="name">I</div>
+					<div class="name_text">Iodine</div>
+					<div class="number">53</div>
+				</td>
+	
+				<td class="cell_nobels">
+					<div class="weight">131.29</div>
+					<div class="name">Xe</div>
+					<div class="name_text">Xenon</div>
+					<div class="number">54</div>
+				</td>
+			</tr>
+
+			<tr>
+				<td class="cell_alcaline_me">
+					<div class="weight">132.91</div>
+					<div class="name">Cs</div>
+					<div class="name_text">Caesium</div>
+					<div class="number">55</div>
+				</td>
+				<td class="cell_earth_me">
+					<div class="weight">137.33</div>
+					<div class="name">Ba</div>
+					<div class="name_text">Barium</div>
+					<div class="number">56</div>
+				</td>
+				<td class="lanthanide">
+					<div class="weight"></div>
+					<div class="top_name">La-Lu</div>
+					<div class="top_name_text">Lanthanides</div>
+					<div class="number">57-71</div>
+				</td>
+				<td class="cell_me">
+					<div class="weight">178.49</div>
+					<div class="name">Hf</div>
+					<div class="name_text">Hafnium</div>
+					<div class="number">72</div>
+				</td>
+				<td class="cell_me">
+					<div class="weight">180.95</div>
+					<div class="name">Ta</div>
+					<div class="name_text">Tantalum</div>
+					<div class="number">73</div>
+				</td>
+				<td class="cell_me">
+					<div class="weight">183.84</div>
+					<div class="name">W</div>
+					<div class="name_text">Wolphram</div>
+					<div class="number">74</div>
+				</td>
+				<td class="cell_me">
+					<div class="weight">186.2</div>
+					<div class="name">Re</div>
+					<div class="name_text">Rhenium</div>
+					<div class="number">75</div>
+				</td>
+				<td class="cell_me">
+					<div class="weight">190.23</div>
+					<div class="name">Os</div>
+					<div class="name_text">Osmium</div>
+					<div class="number">76</div>
+				</td>
+				<td class="cell_me">
+					<div class="weight">192.22</div>
+					<div class="name">Ir</div>
+					<div class="name_text">Iridium</div>
+					<div class="number">77</div>
+				</td>
+				<td class="cell_me">
+					<div class="weight">195.08</div>
+					<div class="name">Pt</div>
+					<div class="name_text">Platinum</div>
+					<div class="number">78</div>
+				</td>
+				<td class="cell_me">
+					<div class="weight">196.97</div>
+					<div class="name">Au</div>
+					<div class="name_text">Gold</div>
+					<div class="number">79</div>
+				</td>
+				<td class="cell_me">
+					<div class="weight">200.59</div>
+					<div class="name">Hg</div>
+					<div class="name_text">Mercury</div>
+					<div class="number">80</div>
+				</td>
+				<td class="cell_non_me2">
+					<div class="weight">204.38</div>
+					<div class="name">Tl</div>
+					<div class="name_text">Thalium</div>
+					<div class="number">81</div>
+				</td>
+				<td class="cell_non_me2">
+					<div class="weight">207.2</div>
+					<div class="name">Pb</div>
+					<div class="name_text">Lead</div>
+					<div class="number">82</div>
+				</td>
+				<td class="cell_non_me2">
+					<div class="weight">208.98</div>
+					<div class="name">Bi</div>
+					<div class="name_text">Bismuth</div>
+					<div class="number">83</div>
+				</td>
+				<td class="cell_non_me">
+					<div class="weight">209</div>
+					<div class="name">Po</div>
+					<div class="name_text">Polonium</div>
+					<div class="number">84</div>
+				</td>
+				<td class="cell_non_me">
+					<div class="weight">210</div>
+					<div class="name">As</div>
+					<div class="name_text">Astatine</div>
+					<div class="number">85</div>
+				</td>
+				<td class="cell_nobels">
+					<div class="weight">222</div>
+					<div class="name">Ra</div>
+					<div class="name_text">Radon</div>
+					<div class="number">86</div>
+				</td>
+			</tr>
+
+			<tr>
+				<td class="cell_alcaline_me">
+					<div class="weight">223</div>
+					<div class="name">Fr</div>
+					<div class="name_text">Francium</div>
+					<div class="number">87</div>
+				</td>
+				<td class="cell_earth_me">
+					<div class="weight">226</div>
+					<div class="name">Ra</div>
+					<div class="name_text">Radium</div>
+					<div class="number">88</div>
+				</td>
+				<td class="actinides">
+					<div class="weight"></div>
+					<div class="top_name">Ac-Lr</div>
+					<div class="top_name_text">Actinides</div>
+					<div class="number">89-103</div>
+				</td>
+				<td class="cell_me">
+					<div class="weight">267</div>
+					<div class="name">Rf</div>
+					<div class="name_text">Rutherford</div>
+					<div class="number">104</div>
+				</td>
+				<td class="cell_me">
+					<div class="weight">268</div>
+					<div class="name">Db</div>
+					<div class="name_text">Dubnium</div>
+					<div class="number">105</div>
+				</td>
+				<td class="cell_me">
+					<div class="weight">271</div>
+					<div class="name">Sg</div>
+					<div class="name_text">Seaborgium</div>
+					<div class="number">106</div>
+				</td>
+				<td class="cell_me">
+					<div class="weight">272</div>
+					<div class="name">Bh</div>
+					<div class="name_text">Bohrium</div>
+					<div class="number">107</div>
+				</td>
+				<td class="cell_me">
+					<div class="weight">270</div>
+					<div class="name">Hs</div>
+					<div class="name_text">Hassium</div>
+					<div class="number">108</div>
+				</td>
+				<td class="cell_me">
+					<div class="weight">276</div>
+					<div class="name">Mt</div>
+					<div class="name_text">Meitnerium</div>
+					<div class="number">109</div>
+				</td>
+				<td class="cell_me">
+					<div class="weight">281</div>
+					<div class="name">Ds</div>
+					<div class="name_text">Darmstadium</div>
+					<div class="number">110</div>
+				</td>
+				<td class="cell_me">
+					<div class="weight">280</div>
+					<div class="name">Rg</div>
+					<div class="name_text">Rentgenium</div>
+					<div class="number">111</div>
+				</td>
+				<td class="cell_me">
+					<div class="weight">285</div>
+					<div class="name">Cn</div>
+					<div class="name_text">Copernicium</div>
+					<div class="number">112</div>
+				</td>
+				<td class="cell_non_me2">
+					<div class="weight">284</div>
+					<div class="name">Nh</div>
+					<div class="name_text">Nihonium</div>
+					<div class="number">113</div>
+				</td>
+				<td class="cell_non_me2">
+					<div class="weight">289</div>
+					<div class="name">Fl</div>
+					<div class="name_text">Flerovium</div>
+					<div class="number">114</div>
+				</td>
+				<td class="cell_non_me2">
+					<div class="weight">289</div>
+					<div class="name">Mc</div>
+					<div class="name_text">Moscovium</div>
+					<div class="number">115</div>
+				</td>
+				<td class="cell_non_me2">
+					<div class="weight">293</div>
+					<div class="name">Lv</div>
+					<div class="name_text">Livermorium</div>
+					<div class="number">116</div>
+				</td>
+				<td class="cell_non_me">
+					<div class="weight">292</div>
+					<div class="name">Ts</div>
+					<div class="name_text">Tennessine</div>
+					<div class="number">117</div>
+				</td>
+				<td class="cell_nobels">
+					<div class="weight">294</div>
+					<div class="name">Og</div>
+					<div class="name_text">Oganesson</div>
+					<div class="number">118</div>
+				</td>
+			</tr>
+		</table>
+	
+		<table class = "table2">
+			<tr>
+				<td id="hidden" >
+					<div id="titles">
+						Lanthanide
+						<br>
+						series
+					</div>
+				</td>
+
+				<td class="lanthanide">
+						<div class="weight">138.91</div>
+						<div class="name">La</div>
+						<div class="name_text">Lanthanum</div>
+						
+						<div class="number">57</div>
+				</td>
+
+				<td class="lanthanide">
+						<div class="weight">140.11</div>
+						<div class="name">Ce</div>
+						<div class="name_text">Cerium</div>
+						
+						<div class="number">58</div>
+				</td>
+				<td class="lanthanide">
+						<div class="weight">140.91</div>
+						<div class="name">Pr</div>
+						<div class="name_text">Praseodium</div>
+						
+						<div class="number">59</div>
+				</td>
+	
+				<td class="lanthanide">
+						<div class="weight">144.24</div>
+						<div class="name">Nd</div>
+						<div class="name_text">Neoymium</div>
+						
+						<div class="number">60</div>
+				</td>
+
+				<td class="lanthanide">
+						<div class="weight">145</div>
+						<div class="name">Pm</div>
+						<div class="name_text">Prometium</div>
+						
+						<div class="number">61</div>
+				</td>
+
+				<td class="lanthanide">
+						<div class="weight">150.36</div>
+						<div class="name">Sm</div>
+						<div class="name_text">Samarium</div>
+						
+						<div class="number">62</div>
+				</td>
+
+				<td class="lanthanide">
+						<div class="weight">151.96</div>
+						<div class="name">Eu</div>
+						<div class="name_text">Europium</div>
+						
+						<div class="number">63</div>
+				</td>
+
+				<td class="lanthanide">
+						<div class="weight">157.25</div>
+						<div class="name">Gd</div>
+						<div class="name_text">Gadolinium</div>
+						
+						<div class="number">64</div>
+				</td>
+
+				<td class="lanthanide">
+						<div class="weight">158.93</div>
+						<div class="name">Tb</div>
+						<div class="name_text">Terbium</div>
+						
+						<div class="number">65</div>
+				</td>
+
+				<td class="lanthanide">
+						<div class="weight">162.5</div>
+						<div class="name">Dy</div>
+						<div class="name_text">Disprosium</div>
+						
+						<div class="number">66</div>
+				</td>
+
+				<td class="lanthanide">
+						<div class="weight">164.93</div>
+						<div class="name">Ho</div>
+						<div class="name_text">Holmium</div>
+						
+						<div class="number">67</div>
+				</td>
+
+				<td class="lanthanide">
+						<div class="weight">167.26</div>
+						<div class="name">Er</div>
+						<div class="name_text">Erbium</div>
+						
+						<div class="number">68</div>
+				</td>
+
+				<td class="lanthanide">
+						<div class="weight">168.93</div>
+						<div class="name">Tm</div>
+						<div class="name_text">Thulium</div>
+						
+						<div class="number">69</div>
+				</td>
+
+				<td class="lanthanide">
+						<div class="weight">173.05</div>
+						<div class="name">Yp</div>
+						<div class="name_text">Ytterbium</div>
+						
+						<div class="number">70</div>
+				</td>
+
+				<td class="lanthanide">
+						<div class="weight">174.97</div>
+						<div class="name">Lu</div>
+						<div class="name_text">Lithetium</div>
+						
+						<div class="number">71</div>
+				</td>
+			</tr>
+
+			<tr>
+				<td id="hidden" >
+					<div id="titles">
+						Actinide
+						<br>
+						series
+					</div>
+				</td>
+	
+				<td class="actinides">
+						<div class="weight">227</div>
+						<div class="name">Ac</div>
+						<div class="name_text">Actinium</div>
+						
+						<div class="number">89</div>
+				</td>
+	
+				<td class="actinides">
+						<div class="weight">232.04</div>
+						<div class="name">Th</div>
+						<div class="name_text">Thorium</div>
+						
+						<div class="number">90</div>
+				</td>
+
+				<td class="actinides">
+						<div class="weight">231.04</div>
+						<div class="name">Pa</div>
+						<div class="name_text">Protactinum</div>
+						
+						<div class="number">91</div>
+				</td>
+		
+				<td class="actinides">
+						<div class="weight">238.03</div>
+						<div class="name">U</div>
+						<div class="name_text">Uranium</div>
+						
+						<div class="number">92</div>
+				</td>
+	
+				<td class="actinides">
+						<div class="weight">237</div>
+						<div class="name">Np</div>
+						<div class="name_text">Neptunium</div>
+						
+						<div class="number">93</div>
+				</td>
+	
+				<td class="actinides">
+						<div class="weight">244</div>
+						<div class="name">Pu</div>
+						<div class="name_text">Plutonium</div>
+						
+						<div class="number">94</div>
+				</td>
+	
+				<td class="actinides">
+						<div class="weight">243</div>
+						<div class="name">Am</div>
+						<div class="name_text">Americium</div>
+						
+						<div class="number">95</div>
+				</td>
+	
+				<td class="actinides">
+						<div class="weight">247</div>
+						<div class="name">Cm</div>
+						<div class="name_text">Curium</div>
+						
+						<div class="number">96</div>
+				</td>
+	
+				<td class="actinides">
+						<div class="weight">247</div>
+						<div class="name">Bk</div>
+						<div class="name_text">Berkelium</div>
+						
+						<div class="number">97</div>
+				</td>
+	
+				<td class="actinides">
+						<div class="weight">251</div>
+						<div class="name">Cf</div>
+						<div class="name_text">Californium</div>
+						
+						<div class="number">98</div>
+				</td>
+	
+				<td class="actinides">
+						<div class="weight">252</div>
+						<div class="name">Es</div>
+						<div class="name_text">Ensteinuium</div>
+						
+						<div class="number">99</div>
+				</td>
+	
+				<td class="actinides">
+						<div class="weight">257</div>
+						<div class="name">Fm</div>
+						<div class="name_text">Fermium</div>
+						
+						<div class="number">100</div>
+				</td>
+	
+				<td class="actinides">
+						<div class="weight">258</div>
+						<div class="name">Md</div>
+						<div class="name_text">Mendelevium</div>
+						
+						<div class="number">101</div>
+				</td>
+	
+				<td class="actinides">
+						<div class="weight">259</div>
+						<div class="name">No</div>
+						<div class="name_text">Nobelium</div>
+						
+						<div class="number">102</div>
+				</td>
+	
+				<td class="actinides">
+						<div class="weight">262</div>
+						<div class="name">Lr</div>
+						<div class="name_text">Lawrencium</div>
+						
+						<div class="number">103</div>
+				</td>
+			</tr>
+		</table>
+	</div>
+	<div>
+</div>
+
+</body>
+
+<footer></footer>
+</html>
